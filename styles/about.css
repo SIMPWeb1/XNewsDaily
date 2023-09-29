@@ -1,0 +1,148 @@
+.about{
+    overflow-x: hidden;
+}
+
+.content__about{
+    padding: 60px 10px;
+}
+
+.text__container__about{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.text__about{
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.text__about__span{
+    font-size: 32px;
+    line-height: 41px;
+    color: #333333;
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+
+.text__about img{
+    max-width: 360px;
+}
+
+.wrap__text{
+    max-width: 700px;
+    position: relative;
+    padding: 30px 10px;
+}
+
+.wrap__text__2{
+    max-width: 700px;
+    position: relative;
+    padding: 30px 10px;
+}
+
+.wrap__text:before {
+    content: '';
+    position: absolute;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -100%;
+}
+.wrap__text:after {
+    content: '';
+    position: absolute;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    top: 0px;
+    bottom: -20px;
+    left: -20px;
+    right: -100%;
+}
+
+.wrap__text__2:before {
+    content: '';
+    position: absolute;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    top: -10px;
+    bottom: -10px;
+    right: -10px;
+    left: -100%;
+}
+.wrap__text__2:after {
+    content: '';
+    position: absolute;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    top: 0px;
+    bottom: -20px;
+    right: -20px;
+    left: -100%;
+}
+
+.adaptive__about__img{
+    display: none;
+    width: 100%;
+    max-width: 60%;
+}
+
+@media (max-width: 800px) {
+    .text__about{
+        max-width: 80%;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .text__about img{
+        display: none;
+    }
+
+    .wrap__text:before {
+        top: -20px;
+        bottom: -10px;
+        left: -10px;
+    }
+    .wrap__text:after {
+        bottom: -30px;
+        left: -30px;
+    }
+
+    .wrap__text__2:before {
+        top: -20px;
+        bottom: -10px;
+        right: -10px;
+    }
+    .wrap__text__2:after {
+        bottom: -30px;
+        right: -30px;
+    }
+
+    .adaptive__about__img{
+        display: block;
+    }
+
+    .text__about__span{
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+}
+
+

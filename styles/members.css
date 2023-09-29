@@ -1,0 +1,40 @@
+.content__members{
+    padding: 60px 10px;
+}
+.members__img{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 0 0 0;
+}
+
+
+.members__img img{
+    max-width: 192px;
+}
+
+.retina{
+    display: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .not__retina{
+        display: none;
+    }
+
+    .retina{
+        display: block;
+    }
+}
+
+@media (max-width: 655px) {
+    .members__img img{
+        max-width: 100px;
+    }
+}

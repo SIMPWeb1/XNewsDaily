@@ -1,0 +1,22 @@
+.coming__soon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__coming{
+    padding: 60px 10px;
+
+}
+
+.hand{
+    width: 80%;
+    right: 0;
+    top: -10px;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .hand{
+        width: 110%;
+    }
+}
