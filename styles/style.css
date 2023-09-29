@@ -40,6 +40,10 @@ section{
     filter: grayscale(1)
 }
 
+.text__footer{
+    font-size: 20px;
+}
+
 #time-1{
     position: absolute;
     color: white;
